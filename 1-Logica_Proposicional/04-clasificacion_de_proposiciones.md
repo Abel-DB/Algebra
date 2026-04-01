@@ -41,7 +41,7 @@ Una contradicción es una proposición que siempre es falsa.
 ### Ejemplo
 
 Proposición:
-p ∧ ¬p
+p ∧ ~p
 
 | p | ~p | Resultado |
 |---|----|----------|

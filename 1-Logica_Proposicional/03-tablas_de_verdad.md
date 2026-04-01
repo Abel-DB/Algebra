@@ -32,7 +32,7 @@ Columnas = proposiciones simples + operaciones lógicas
 
 ### Ejemplo
 
-Para (p ∨ q) ∧ ¬p:
+Para (p ∨ q) ∧ ~p:
 
 - p, q → 2 columnas
 - p ∨ q → 1 columna
@@ -101,7 +101,7 @@ Para construir rápidamente la tabla:
 
 Proposición:
 
-(p ∨ q) ∧ ¬p
+(p ∨ q) ∧ ~p
 
 ---
 
@@ -126,7 +126,7 @@ Número de filas = 2^2 = 4
 
 ### Paso 3: Resolver operaciones
 
-| p | q | p ∨ q | ¬p | Resultado |
+| p | q | p ∨ q | ~p | Resultado |
 |---|---|-------|----|----------|
 | V | V | V     | F  | F        |
 | V | F | V     | F  | F        |
