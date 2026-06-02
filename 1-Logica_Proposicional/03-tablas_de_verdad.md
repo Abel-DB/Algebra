@@ -1,58 +1,58 @@
 # Tablas de Verdad
 
-Las tablas de verdad son una herramienta fundamental en lógica proposicional que permiten determinar el valor de verdad de una proposición compuesta a partir de todas las combinaciones posibles de sus proposiciones simples.
+Las tablas de verdad son herramientas que permiten determinar el valor de verdad de una proposición compuesta a partir de los valores de verdad de sus proposiciones simples.
+
+---
+
+## ¿Para qué sirven?
+
+Las tablas de verdad permiten:
+
+* Analizar proposiciones compuestas.
+* Verificar razonamientos lógicos.
+* Clasificar proposiciones.
+* Determinar equivalencias lógicas.
 
 ---
 
 ## Número de filas
 
-El número de filas de una tabla de verdad depende de la cantidad de proposiciones simples.
+El número de filas de una tabla de verdad depende de la cantidad de variables proposicionales.
 
-Se calcula con la fórmula:
+### Fórmula
 
-Número de filas = 2^n
+2^n
 
 Donde:
-- n = número de proposiciones
+
+* n = número de variables proposicionales.
 
 ### Ejemplos
 
-- 1 proposición → 2 filas
-- 2 proposiciones → 4 filas
-- 3 proposiciones → 8 filas
-- 4 proposiciones → 16 filas
+| Variables | Filas |
+| --------- | ----- |
+| 1         | 2     |
+| 2         | 4     |
+| 3         | 8     |
+| 4         | 16    |
 
 ---
 
-## Número de columnas
+## Construcción de valores de verdad
 
-El número de columnas depende de:
+### Una variable
 
-Columnas = proposiciones simples + operaciones lógicas
-
-### Ejemplo
-
-Para (p ∨ q) ∧ ~p:
-
-- p, q → 2 columnas
-- p ∨ q → 1 columna
-- ¬p → 1 columna
-- resultado final → 1 columna
-
-Total: 5 columnas
+| p |
+| - |
+| V |
+| F |
 
 ---
 
-## Orden de los valores de verdad
-
-Es fundamental respetar el orden correcto para evitar errores.
-
----
-
-### Para 2 proposiciones
+### Dos variables
 
 | p | q |
-|---|---|
+| - | - |
 | V | V |
 | V | F |
 | F | V |
@@ -60,10 +60,10 @@ Es fundamental respetar el orden correcto para evitar errores.
 
 ---
 
-### Para 3 proposiciones
+### Tres variables
 
 | p | q | r |
-|---|---|---|
+| - | - | - |
 | V | V | V |
 | V | V | F |
 | V | F | V |
@@ -75,103 +75,123 @@ Es fundamental respetar el orden correcto para evitar errores.
 
 ---
 
-## Método práctico (patrón)
+## Construcción de una tabla de verdad
 
-Para construir rápidamente la tabla:
-
-### Para 3 variables (p, q, r)
-
-- p cambia cada 4 filas → V V V V / F F F F
-- q cambia cada 2 filas → V V / F F / V V / F F
-- r cambia cada 1 fila → V / F / V / F ...
-
----
-
-## Procedimiento para construir una tabla de verdad
-
-1. Identificar las proposiciones simples
-2. Calcular el número de filas (2^n)
-3. Construir las columnas base (p, q, r...)
-4. Aplicar los conectores paso a paso
-5. Obtener la columna final
-
----
-
-## Ejemplo paso a paso
+### Ejemplo
 
 Proposición:
 
-(p ∨ q) ∧ ~p
+p ∧ q
 
----
+### Paso 1
 
-### Paso 1: Variables
-
-p, q → 2 variables
-
-Número de filas = 2^2 = 4
-
----
-
-### Paso 2: Tabla base
+Construir las columnas de las variables.
 
 | p | q |
-|---|---|
+| - | - |
 | V | V |
 | V | F |
 | F | V |
 | F | F |
 
+### Paso 2
+
+Aplicar el conector lógico.
+
+| p | q | p ∧ q |
+| - | - | ----- |
+| V | V | V     |
+| V | F | F     |
+| F | V | F     |
+| F | F | F     |
+
 ---
 
-### Paso 3: Resolver operaciones
+## Ejemplo con varios conectores
 
-| p | q | p ∨ q | ~p | Resultado |
-|---|---|-------|----|----------|
-| V | V | V     | F  | F        |
-| V | F | V     | F  | F        |
-| F | V | V     | V  | V        |
-| F | F | F     | V  | F        |
+Proposición:
+
+(p ∨ q) ∧ ¬p
+
+### Paso 1
+
+Construir las variables.
+
+| p | q |
+| - | - |
+| V | V |
+| V | F |
+| F | V |
+| F | F |
+
+### Paso 2
+
+Calcular ¬p.
+
+| p | q | ¬p |
+| - | - | -- |
+| V | V | F  |
+| V | F | F  |
+| F | V | V  |
+| F | F | V  |
+
+### Paso 3
+
+Calcular p ∨ q.
+
+| p | q | p ∨ q |
+| - | - | ----- |
+| V | V | V     |
+| V | F | V     |
+| F | V | V     |
+| F | F | F     |
+
+### Paso 4
+
+Calcular (p ∨ q) ∧ ¬p.
+
+| p | q | p ∨ q | ¬p | (p ∨ q) ∧ ¬p |
+| - | - | ----- | -- | ------------ |
+| V | V | V     | F  | F            |
+| V | F | V     | F  | F            |
+| F | V | V     | V  | V            |
+| F | F | F     | V  | F            |
 
 ---
 
 ## Interpretación de resultados
 
-La última columna representa el valor final de la proposición.
+La última columna de la tabla representa el valor de verdad final de la proposición.
 
-Se utiliza para clasificarla como:
+Esta columna será utilizada posteriormente para clasificar la proposición como:
 
-- Tautología
-- Contradicción
-- Contingencia
-
----
-
-## Recomendaciones importantes
-
-- Resolver siempre paso a paso
-- No mezclar operaciones en una sola columna
-- Verificar cada columna antes de continuar
-- Usar paréntesis correctamente
+* Tautología.
+* Contradicción.
+* Contingencia.
 
 ---
 
-## Errores comunes
+## Recomendaciones
 
-- No respetar el orden de valores
-- Calcular mal el número de filas
-- Saltar pasos en operaciones
-- Confundir conectores lógicos
+* Resolver primero las expresiones entre paréntesis.
+* Aplicar la jerarquía de operadores lógicos.
+* Trabajar una columna a la vez.
+* Revisar cuidadosamente cada fila.
+
+---
+
+## Errores frecuentes
+
+* Construir un número incorrecto de filas.
+* Resolver varios conectores al mismo tiempo.
+* Ignorar los paréntesis.
+* Confundir el orden de los valores V y F.
 
 ---
 
-## Importancia de las tablas de verdad
+## Resumen
 
-Permiten:
-
-- Analizar proposiciones complejas
-- Verificar razonamientos
-- Identificar tipos de proposiciones
-- Aplicar lógica en programación y matemática
-
----
+* Una tabla de verdad muestra todos los posibles valores de una proposición.
+* El número de filas depende de la cantidad de variables.
+* La última columna contiene el resultado final.
+* Las tablas de verdad permiten clasificar proposiciones y analizar razonamientos.

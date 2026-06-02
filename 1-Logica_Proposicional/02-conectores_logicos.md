@@ -2,7 +2,7 @@
 
 Los conectores lógicos son símbolos que permiten combinar proposiciones simples para formar proposiciones compuestas.
 
-Cada conector define una operación lógica específica y tiene una tabla de verdad asociada.
+Cada conector representa una operación lógica específica y posee una tabla de verdad asociada.
 
 ---
 
@@ -10,45 +10,62 @@ Cada conector define una operación lógica específica y tiene una tabla de ver
 
 Los principales conectores lógicos son:
 
-- Negación
-- Conjunción
-- Disyunción
-- Implicación
-- Bicondicional
-- Disyunción exclusiva
+* Negación (¬)
+* Conjunción (∧)
+* Disyunción (∨)
+* Implicación (→)
+* Bicondicional (↔)
+* Disyunción exclusiva (⊕)
 
 ---
 
-## Negación (~p)
+## Resumen de conectores
+
+| Conector             | Símbolo | Lectura        |
+| -------------------- | ------- | -------------- |
+| Negación             | ¬       | No             |
+| Conjunción           | ∧       | Y              |
+| Disyunción           | ∨       | O              |
+| Implicación          | →       | Si... entonces |
+| Bicondicional        | ↔       | Si y solo si   |
+| Disyunción exclusiva | ⊕       | O uno u otro   |
+
+---
+
+## Negación (¬p)
 
 La negación cambia el valor de verdad de una proposición.
 
-Se lee: "no p"
+Se lee:
+
+> "No p"
 
 ### Tabla de verdad
 
-| p | ~p |
-|---|---|
-| V | F |
-| F | V |
+| p | ¬p |
+| - | -- |
+| V | F  |
+| F | V  |
 
 ### Ejemplo
 
-- p: "Llueve"
-- ~p: "No llueve"
+* p: "Llueve"
+* ¬p: "No llueve"
 
 ---
 
 ## Conjunción (p ∧ q)
 
-Representa la operación lógica "y".
+Representa la operación lógica:
+
+> "p y q"
 
 Solo es verdadera cuando ambas proposiciones son verdaderas.
 
 ### Tabla de verdad
 
 | p | q | p ∧ q |
-|---|---|-------|
+| - | - | ----- |
 | V | V | V     |
 | V | F | F     |
 | F | V | F     |
@@ -56,22 +73,29 @@ Solo es verdadera cuando ambas proposiciones son verdaderas.
 
 ### Ejemplo
 
-- p: "Llueve"
-- q: "Hace frío"
-- p ∧ q: "Llueve y hace frío"
+* p: "Llueve"
+* q: "Hace frío"
+
+Proposición:
+
+> "Llueve y hace frío"
 
 ---
 
 ## Disyunción (p ∨ q)
 
-Representa la operación lógica "o" (inclusivo).
+Representa la operación lógica:
+
+> "p o q"
+
+Es una disyunción inclusiva.
 
 Es verdadera cuando al menos una proposición es verdadera.
 
 ### Tabla de verdad
 
 | p | q | p ∨ q |
-|---|---|-------|
+| - | - | ----- |
 | V | V | V     |
 | V | F | V     |
 | F | V | V     |
@@ -79,22 +103,31 @@ Es verdadera cuando al menos una proposición es verdadera.
 
 ### Ejemplo
 
-- p: "Llueve"
-- q: "Hace frío"
-- p ∨ q: "Llueve o hace frío"
+* p: "Llueve"
+* q: "Hace frío"
+
+Proposición:
+
+> "Llueve o hace frío"
+
+### Observación
+
+La disyunción sigue siendo verdadera cuando ambas proposiciones son verdaderas.
 
 ---
 
 ## Implicación (p → q)
 
-Representa la relación "si p, entonces q".
+Representa la relación:
 
-Solo es falsa cuando p es verdadera y q es falsa.
+> "Si p, entonces q"
+
+Solo es falsa cuando la primera proposición es verdadera y la segunda es falsa.
 
 ### Tabla de verdad
 
 | p | q | p → q |
-|---|---|-------|
+| - | - | ----- |
 | V | V | V     |
 | V | F | F     |
 | F | V | V     |
@@ -102,22 +135,37 @@ Solo es falsa cuando p es verdadera y q es falsa.
 
 ### Ejemplo
 
-- p: "Estudio"
-- q: "Apruebo"
-- p → q: "Si estudio, entonces apruebo"
+* p: "Estudio"
+* q: "Apruebo"
+
+Proposición:
+
+> "Si estudio, entonces apruebo"
+
+### Observación
+
+La implicación únicamente es falsa en el caso:
+
+```text id="wsgxkh"
+V → F
+```
+
+En cualquier otro caso será verdadera.
 
 ---
 
 ## Bicondicional (p ↔ q)
 
-Representa "p si y solo si q".
+Representa la relación:
+
+> "p si y solo si q"
 
 Es verdadera cuando ambas proposiciones tienen el mismo valor de verdad.
 
 ### Tabla de verdad
 
 | p | q | p ↔ q |
-|---|---|-------|
+| - | - | ----- |
 | V | V | V     |
 | V | F | F     |
 | F | V | F     |
@@ -125,22 +173,27 @@ Es verdadera cuando ambas proposiciones tienen el mismo valor de verdad.
 
 ### Ejemplo
 
-- p: "Hay luz"
-- q: "El interruptor está encendido"
-- p ↔ q: "Hay luz si y solo si el interruptor está encendido"
+* p: "Hay luz"
+* q: "El interruptor está encendido"
+
+Proposición:
+
+> "Hay luz si y solo si el interruptor está encendido"
 
 ---
 
 ## Disyunción exclusiva (p ⊕ q)
 
-Representa "o bien p o bien q, pero no ambos".
+Representa la relación:
 
-Es verdadera solo cuando exactamente una proposición es verdadera.
+> "O bien p o bien q, pero no ambas"
+
+Es verdadera únicamente cuando exactamente una proposición es verdadera.
 
 ### Tabla de verdad
 
 | p | q | p ⊕ q |
-|---|---|-------|
+| - | - | ----- |
 | V | V | F     |
 | V | F | V     |
 | F | V | V     |
@@ -148,18 +201,32 @@ Es verdadera solo cuando exactamente una proposición es verdadera.
 
 ### Ejemplo
 
-- p: "Voy al cine"
-- q: "Voy a estudiar"
-- p ⊕ q: "O voy al cine o voy a estudiar (pero no ambos)"
+* p: "Voy al cine"
+* q: "Voy a estudiar"
+
+Proposición:
+
+> "O voy al cine o voy a estudiar, pero no ambas cosas."
+
+---
+
+## Comparación entre disyunción y disyunción exclusiva
+
+| Caso | p ∨ q | p ⊕ q |
+| ---- | ----- | ----- |
+| V, V | V     | F     |
+| V, F | V     | V     |
+| F, V | V     | V     |
+| F, F | F     | F     |
 
 ---
 
 ## Jerarquía de operaciones lógicas
 
-Cuando una proposición tiene varios conectores, se resuelve en el siguiente orden:
+Cuando una expresión contiene varios conectores, se resuelve en el siguiente orden:
 
 1. Paréntesis
-2. Negación (¬, ~)
+2. Negación (¬)
 3. Conjunción (∧)
 4. Disyunción (∨)
 5. Implicación (→)
@@ -169,21 +236,30 @@ Cuando una proposición tiene varios conectores, se resuelve en el siguiente ord
 
 ## Observaciones importantes
 
-- La disyunción (∨) es inclusiva
-- La disyunción exclusiva (⊕) excluye que ambas sean verdaderas
-- La implicación puede ser verdadera aunque la primera proposición sea falsa
-- Es importante usar paréntesis para evitar ambigüedades
+* La disyunción (∨) es inclusiva.
+* La disyunción exclusiva (⊕) excluye que ambas proposiciones sean verdaderas.
+* La implicación puede ser verdadera aunque la primera proposición sea falsa.
+* Los paréntesis ayudan a evitar ambigüedades.
+* La jerarquía de operadores debe respetarse al construir tablas de verdad.
 
 ---
 
-## Ejemplo combinado
+## Resumen
 
-Proposición:
+| Símbolo | Nombre               |
+| ------- | -------------------- |
+| ¬       | Negación             |
+| ∧       | Conjunción           |
+| ∨       | Disyunción           |
+| →       | Implicación          |
+| ↔       | Bicondicional        |
+| ⊕       | Disyunción exclusiva |
 
-(p ∨ q) ∧ ~p
+### Ideas clave
 
-Interpretación:
-
-"Ocurre p o q, y además no ocurre p"
-
----
+* ¬ cambia el valor de verdad.
+* ∧ requiere ambas verdaderas.
+* ∨ requiere al menos una verdadera.
+* → solo es falsa cuando V → F.
+* ↔ requiere igualdad de valores de verdad.
+* ⊕ requiere exactamente una verdadera.

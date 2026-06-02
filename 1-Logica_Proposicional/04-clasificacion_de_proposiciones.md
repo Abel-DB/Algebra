@@ -1,146 +1,187 @@
 # Clasificación de Proposiciones
 
-Las proposiciones compuestas pueden clasificarse según los valores de verdad que toman en su tabla de verdad.
+La clasificación de proposiciones consiste en analizar la columna final de una tabla de verdad para determinar el comportamiento lógico de una proposición.
 
-Esta clasificación se realiza observando la columna final (resultado).
+Las proposiciones pueden clasificarse como:
+
+* Tautología
+* Contradicción
+* Contingencia
 
 ---
 
 ## Tautología
 
-Una tautología es una proposición que siempre es verdadera, sin importar los valores de verdad de las proposiciones simples.
+Una tautología es una proposición que resulta verdadera en todos los casos posibles.
 
 ### Característica
 
-- Todos los valores en la tabla final son verdaderos (V)
+Todos los valores de la columna final son verdaderos.
 
 ### Ejemplo
 
 Proposición:
-p ∨ ~p
 
-| p | ~p | Resultado |
-|---|----|----------|
-| V | F  | V        |
-| F | V  | V        |
+p ∨ ¬p
 
-### Interpretación
+| p | ¬p | p ∨ ¬p |
+| - | -- | ------ |
+| V | F  | V      |
+| F | V  | V      |
 
-Siempre ocurre, independientemente del valor de p.
+### Observación
+
+Una tautología siempre será verdadera independientemente de los valores de las variables proposicionales.
 
 ---
 
 ## Contradicción
 
-Una contradicción es una proposición que siempre es falsa.
+Una contradicción es una proposición que resulta falsa en todos los casos posibles.
 
 ### Característica
 
-- Todos los valores en la tabla final son falsos (F)
+Todos los valores de la columna final son falsos.
 
 ### Ejemplo
 
 Proposición:
-p ∧ ~p
 
-| p | ~p | Resultado |
-|---|----|----------|
-| V | F  | F        |
-| F | V  | F        |
+p ∧ ¬p
 
-### Interpretación
+| p | ¬p | p ∧ ¬p |
+| - | -- | ------ |
+| V | F  | F      |
+| F | V  | F      |
 
-Nunca puede cumplirse.
+### Observación
+
+Una contradicción nunca puede ser verdadera.
 
 ---
 
 ## Contingencia
 
-Una contingencia es una proposición que puede ser verdadera o falsa dependiendo de los valores de sus variables.
+Una contingencia es una proposición que presenta tanto valores verdaderos como falsos.
 
 ### Característica
 
-- La tabla final contiene valores verdaderos y falsos
+La columna final contiene una combinación de valores verdaderos y falsos.
 
 ### Ejemplo
 
 Proposición:
+
 p ∧ q
 
-| p | q | Resultado |
-|---|---|----------|
-| V | V | V        |
-| V | F | F        |
-| F | V | F        |
-| F | F | F        |
+| p | q | p ∧ q |
+| - | - | ----- |
+| V | V | V     |
+| V | F | F     |
+| F | V | F     |
+| F | F | F     |
+
+### Observación
+
+La mayoría de las proposiciones que aparecen en ejercicios son contingencias.
 
 ---
 
-## Método para clasificar proposiciones
+## Comparación
 
-1. Construir la tabla de verdad
-2. Observar la última columna
-
-### Resultado:
-
-- Todos V → Tautología
-- Todos F → Contradicción
-- Mezcla de V y F → Contingencia
+| Clasificación | Resultado final |
+| ------------- | --------------- |
+| Tautología    | Todo V          |
+| Contradicción | Todo F          |
+| Contingencia  | Mezcla de V y F |
 
 ---
 
-## Importancia de la clasificación
+## Método de clasificación
 
-Permite:
+Para clasificar una proposición:
 
-- Determinar la validez de expresiones lógicas
-- Identificar proposiciones siempre verdaderas
-- Detectar contradicciones
-- Analizar razonamientos
+1. Construir la tabla de verdad.
+2. Identificar la última columna.
+3. Analizar los resultados.
+
+### Regla rápida
+
+Si la última columna es:
+
+* Todo V → Tautología
+* Todo F → Contradicción
+* V y F mezclados → Contingencia
 
 ---
 
-## Ejemplos adicionales
+## Ejemplos rápidos
 
 ### Ejemplo 1
 
-Proposición:
-p → p
+| Resultado |
+| --------- |
+| V         |
+| V         |
+| V         |
+| V         |
 
-Resultado: siempre verdadero → Tautología
+Clasificación:
+
+**Tautología**
 
 ---
 
 ### Ejemplo 2
 
-Proposición:
-(p ∧ q) → p
+| Resultado |
+| --------- |
+| F         |
+| F         |
+| F         |
+| F         |
 
-Resultado: siempre verdadero → Tautología
+Clasificación:
+
+**Contradicción**
 
 ---
 
 ### Ejemplo 3
 
-Proposición:
-p ⊕ p
+| Resultado |
+| --------- |
+| V         |
+| F         |
+| V         |
+| F         |
 
-Resultado: siempre falso → Contradicción
+Clasificación:
+
+**Contingencia**
 
 ---
 
-## Relación con tablas de verdad
+## Errores frecuentes
 
-La clasificación depende directamente de la tabla de verdad.
-
-Sin construir la tabla, no se puede determinar con certeza el tipo de proposición.
+* Analizar una columna intermedia en lugar de la última.
+* Construir incorrectamente la tabla de verdad.
+* Confundir contingencia con contradicción.
+* Clasificar sin verificar todos los resultados.
 
 ---
 
 ## Resumen
 
-- Tautología: siempre verdadera
-- Contradicción: siempre falsa
-- Contingencia: combinación de valores
+| Tipo          | Regla                      |
+| ------------- | -------------------------- |
+| Tautología    | Todos los resultados son V |
+| Contradicción | Todos los resultados son F |
+| Contingencia  | Existen V y F              |
 
----
+### Ideas clave
+
+* La clasificación se realiza utilizando la última columna de la tabla de verdad.
+* Una tautología siempre es verdadera.
+* Una contradicción siempre es falsa.
+* Una contingencia puede ser verdadera o falsa según los valores de las variables.
