@@ -50,9 +50,9 @@ Todos representan el mismo grupo.
 
 ---
 
-### Fórmula
+### Fórmulas
 
-Sin repetición:
+#### Sin Repetición
 
 ```text
            n!
@@ -60,7 +60,15 @@ C(n,k) = ---------
          (n-k)! k!
 ```
 
-Con repetición:
+Condición:
+
+```text
+n ≥ k
+```
+
+---
+
+#### Con Repetición
 
 ```text
                (n+k-1)!
@@ -104,13 +112,15 @@ BAC
 
 ### Fórmulas
 
-Permutación sin repetición:
+#### Permutación Simple
 
 ```text
 P(n) = n!
 ```
 
-Permutación con repetición:
+---
+
+#### Permutación con Repetición
 
 ```text
                  n!
@@ -118,7 +128,9 @@ P = -----------------------
      n₁! · n₂! · ... · nk!
 ```
 
-Permutación circular:
+---
+
+#### Permutación Circular
 
 ```text
 PC(n) = (n-1)!
@@ -155,7 +167,7 @@ BA
 
 ### Fórmulas
 
-Variación sin repetición:
+#### Variación Sin Repetición
 
 ```text
            m!
@@ -163,10 +175,25 @@ V(m,n) = --------
           (m-n)!
 ```
 
-Variación con repetición:
+Condición:
+
+```text
+m ≥ n
+```
+
+---
+
+#### Variación Con Repetición
 
 ```text
 VR(m,n) = mⁿ
+```
+
+Condiciones:
+
+```text
+m > 0
+n > 0
 ```
 
 ---
@@ -209,6 +236,60 @@ Continuar al paso 2.
 
 ---
 
+# Ejemplos de Identificación
+
+## Ejemplo 1
+
+Elegir 4 estudiantes de un curso para formar una comisión.
+
+```text
+Orden NO importa
+```
+
+Resultado:
+
+```text
+→ Combinación
+```
+
+---
+
+## Ejemplo 2
+
+Asignar los cargos de presidente, vicepresidente y secretario entre 10 candidatos.
+
+```text
+Orden SÍ importa
+
+No participan todos los candidatos
+```
+
+Resultado:
+
+```text
+→ Variación
+```
+
+---
+
+## Ejemplo 3
+
+Ordenar 8 libros diferentes en una repisa.
+
+```text
+Orden SÍ importa
+
+Participan todos los elementos
+```
+
+Resultado:
+
+```text
+→ Permutación
+```
+
+---
+
 # Resumen General de Fórmulas
 
 ## Combinación Sin Repetición
@@ -231,7 +312,7 @@ CR(n,k) = ----------------
 
 ---
 
-## Permutación Sin Repetición
+## Permutación Simple
 
 ```text
 P(n) = n!
@@ -287,3 +368,17 @@ VR(m,n) = mⁿ
 ¿El orden importa y se usa solo una parte de los elementos?
 → Variación
 ```
+
+---
+
+# Conclusión
+
+La clave para identificar correctamente un método combinatorio consiste en analizar:
+
+✓ Si el orden importa.
+
+✓ Si participan todos los elementos.
+
+✓ Si existe repetición.
+
+Responder estas preguntas permite seleccionar la fórmula adecuada y resolver correctamente cualquier problema de Análisis Combinatorio.

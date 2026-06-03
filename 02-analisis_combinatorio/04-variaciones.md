@@ -13,7 +13,9 @@ Por esta razón, dos agrupaciones con los mismos elementos pero en diferente ord
 
 Ejemplo:
 
+```text
 AB ≠ BA
+```
 
 ---
 
@@ -21,27 +23,28 @@ AB ≠ BA
 
 Supongamos que se tienen los elementos:
 
+```text
 A, B y C
+```
 
 y se desea formar agrupaciones de 2 elementos.
 
 Posibles agrupaciones:
 
+```text
 AB
-
 AC
-
 BA
-
 BC
-
 CA
-
 CB
+```
 
 Observamos que:
 
+```text
 AB ≠ BA
+```
 
 porque el orden ha cambiado.
 
@@ -78,44 +81,44 @@ Donde:
 * m = número total de elementos.
 * n = número de elementos seleccionados.
 
-Condición:
+### Condición
 
 ```text
-m > n
+m ≥ n
 ```
 
 ---
 
-## Ejemplo
+## Ejemplo 1
 
 ¿Cuántos números de 3 cifras pueden formarse con:
 
+```text
 1, 2, 3, 4 y 5
+```
 
 sin repetir?
 
-Datos:
+### Datos
 
 ```text
 m = 5
 n = 3
 ```
 
-Aplicando:
+### Aplicando
 
 ```text
            5!
 V(5,3) = --------
-          (5-3)!
+             2!
 
-           5!
-V(5,3) = ----
-            2!
+V(5,3)=5·4·3
 
-V(5,3) = 60
+V(5,3)=60
 ```
 
-Respuesta:
+### Respuesta
 
 ```text
 60 formas
@@ -123,12 +126,41 @@ Respuesta:
 
 ---
 
-# Aplicaciones
+## Ejemplo 2
 
-Las variaciones sin repetición se utilizan en:
+¿De cuántas formas diferentes pueden cubrirse los puestos de presidente, vicepresidente y tesorero de un club si existen 12 candidatos?
+
+### Datos
+
+```text
+m = 12
+n = 3
+```
+
+### Aplicando
+
+```text
+            12!
+V(12,3)=---------
+              9!
+
+V(12,3)=12·11·10
+
+V(12,3)=1320
+```
+
+### Respuesta
+
+```text
+1320 formas
+```
+
+---
+
+## Aplicaciones
 
 * Formación de códigos.
-* Contraseñas.
+* Contraseñas sin repetición.
 * Organización de posiciones.
 * Asignación de cargos.
 * Números sin repetición.
@@ -149,7 +181,7 @@ Son agrupaciones donde:
 ## Fórmula
 
 ```text
-VR(m,n) = mⁿ
+VR(m,n)=mⁿ
 ```
 
 Donde:
@@ -157,7 +189,7 @@ Donde:
 * m = número total de elementos disponibles.
 * n = cantidad de posiciones.
 
-Condición:
+### Condiciones
 
 ```text
 m > 0
@@ -168,46 +200,188 @@ No existe restricción entre ellos.
 
 ---
 
-## Ejemplo
+## Ejemplo 1
 
-¿Cuántos códigos de 4 caracteres pueden formarse utilizando:
+¿Cuántos números capicúas de cuatro cifras existen?
 
-1, 2 y 3
-
-permitiendo repeticiones?
-
-Datos:
+### Forma
 
 ```text
-m = 3
-n = 4
+abba
 ```
 
-Aplicando:
+con:
 
 ```text
-VR(3,4) = 3⁴
-
-VR(3,4) = 81
+a ≠ 0
 ```
 
-Respuesta:
+### Aplicando
 
 ```text
-81 formas
+VR(9,1) · VR(10,1)
+
+= 9 · 10
+
+= 90
+```
+
+### Respuesta
+
+```text
+90 números capicúas
 ```
 
 ---
 
-# Aplicaciones
+## Ejemplo 2
 
-Las variaciones con repetición se utilizan en:
+Con el punto (•) y la raya (—) del sistema Morse,
+
+¿cuántas señales distintas pueden enviarse usando como máximo cuatro pulsaciones?
+
+### Aplicando
+
+```text
+VR(2,1)=2
+
+VR(2,2)=4
+
+VR(2,3)=8
+
+VR(2,4)=16
+```
+
+### Total
+
+```text
+2+4+8+16
+
+=30
+```
+
+### Respuesta
+
+```text
+30 señales distintas
+```
+
+---
+
+## Aplicaciones
 
 * PIN de seguridad.
 * Contraseñas.
 * Códigos de acceso.
 * Matrículas.
 * Identificadores.
+
+---
+
+# Ecuaciones con Variaciones
+
+## Definición
+
+Son ecuaciones en las cuales aparece una expresión de variación y se busca determinar el valor de una variable desconocida.
+
+La incógnita puede encontrarse en:
+
+* m
+* n
+
+o dentro de expresiones algebraicas asociadas.
+
+---
+
+## Fórmulas Utilizadas
+
+### Variación Sin Repetición
+
+```text
+           m!
+V(m,n) = --------
+          (m-n)!
+```
+
+### Variación Con Repetición
+
+```text
+VR(m,n)=mⁿ
+```
+
+---
+
+## Procedimiento General
+
+1. Escribir la fórmula correspondiente.
+2. Sustituir los datos conocidos.
+3. Simplificar factoriales o potencias.
+4. Resolver la ecuación resultante.
+5. Verificar la solución obtenida.
+
+---
+
+## Ejemplo 1
+
+Resolver:
+
+```text
+V(x,4)=20V(x,2)
+```
+
+### Soluciones
+
+```text
+x₁=-2
+
+x₂=7
+```
+
+### Verificación
+
+Como:
+
+```text
+m ≥ n
+```
+
+la solución válida es:
+
+```text
+x=7
+```
+
+---
+
+## Ejemplo 2
+
+Resolver:
+
+```text
+2V(x-1,2)-4=V(x+1,2)
+```
+
+### Soluciones
+
+```text
+x₁=0
+
+x₂=7
+```
+
+### Verificación
+
+La solución válida es:
+
+```text
+x=7
+```
+
+---
+
+## Observación
+
+Las ecuaciones con variaciones constituyen una aplicación de las variaciones ordinarias y de las variaciones con repetición.
 
 ---
 
@@ -247,6 +421,26 @@ Se utiliza solamente una parte de los elementos.
 
 ---
 
+# Identificación de Problemas de Variaciones
+
+Un problema es de variaciones cuando:
+
+✓ El orden importa.
+
+✓ No necesariamente participan todos los elementos.
+
+✓ Puede existir o no repetición.
+
+Ejemplos:
+
+* Formación de códigos.
+* Contraseñas.
+* Asignación de cargos.
+* Selección de campeón y subcampeón.
+* Números de varias cifras.
+
+---
+
 # Resumen
 
 ## Variación Sin Repetición
@@ -260,7 +454,7 @@ V(m,n) = --------
 Condición:
 
 ```text
-m > n
+m ≥ n
 ```
 
 ---
@@ -268,7 +462,7 @@ m > n
 ## Variación Con Repetición
 
 ```text
-VR(m,n) = mⁿ
+VR(m,n)=mⁿ
 ```
 
 Condiciones:
@@ -280,7 +474,7 @@ n > 0
 
 ---
 
-## Recordatorio
+## Regla de Oro
 
 ```text
 AB ≠ BA
