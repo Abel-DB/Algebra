@@ -122,11 +122,7 @@ $$
 ### Conjugado de una suma
 
 $$
-\overline{z_1+z_2}
-=
-\overline{z_1}
-+
-\overline{z_2}
+\overline{z_1+z_2} = \overline{z_1} + \overline{z_2}
 $$
 
 ---
@@ -134,11 +130,7 @@ $$
 ### Conjugado de una resta
 
 $$
-\overline{z_1-z_2}
-=
-\overline{z_1}
--
-\overline{z_2}
+\overline{z_1-z_2} = \overline{z_1} - \overline{z_2}
 $$
 
 ---
@@ -146,11 +138,7 @@ $$
 ### Conjugado de un producto
 
 $$
-\overline{z_1z_2}
-=
-\overline{z_1}
-\cdot
-\overline{z_2}
+\overline{z_1z_2} = \overline{z_1} \cdot \overline{z_2}
 $$
 
 ---
@@ -160,9 +148,7 @@ $$
 Una propiedad muy importante es:
 
 $$
-z\overline{z}
-=
-(a+bi)(a-bi)
+z\overline{z} = (a+bi)(a-bi)
 $$
 
 Desarrollando:
@@ -245,9 +231,7 @@ $$
 Como:
 
 $$
-(c+di)(c-di)
-=
-c^2+d^2
+(c+di)(c-di) = c^2+d^2
 $$
 
 el denominador se vuelve un número real.
@@ -255,10 +239,7 @@ el denominador se vuelve un número real.
 Finalmente:
 
 $$
-\frac{a+bi}{c+di}
-=
-\frac{(ac+bd)+(bc-ad)i}
-{c^2+d^2}
+\frac{a+bi}{c+di} = \frac{(ac+bd)+(bc-ad)i} {c^2+d^2}
 $$
 
 ---

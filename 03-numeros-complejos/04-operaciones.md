@@ -145,9 +145,7 @@ $$
 ### Fórmula General
 
 $$
-(a+bi)(c+di)
-=
-(ac-bd)+(ad+bc)i
+(a+bi)(c+di) = (ac-bd)+(ad+bc)i
 $$
 
 ---
@@ -335,25 +333,19 @@ $$
 ### Asociativa de la suma
 
 $$
-(z_1+z_2)+z_3
-=
-z_1+(z_2+z_3)
+(z_1+z_2)+z_3 = z_1+(z_2+z_3)
 $$
 
 ### Asociativa de la multiplicación
 
 $$
-(z_1z_2)z_3
-=
-z_1(z_2z_3)
+(z_1z_2)z_3 = z_1(z_2z_3)
 $$
 
 ### Distributiva
 
 $$
-z_1(z_2+z_3)
-=
-z_1z_2+z_1z_3
+z_1(z_2+z_3) = z_1z_2+z_1z_3
 $$
 
 ---
