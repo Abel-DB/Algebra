@@ -296,11 +296,11 @@ $$
 
 $$
 = \frac{5\cdot4\cdot3!}
-{(3\cdot2\cdot1)(2\cdot1)}
+{(3!)(2\cdot1)}
 $$
 
 $$
-= \frac{5\cdot4}{2}
+= 5\cdot4
 $$
 
 $$
@@ -326,10 +326,6 @@ $$
 $$
 
 $$
-= \frac{9\cdot8\cdot7}{6}
-$$
-
-$$
 = 3\cdot4\cdot7
 $$
 
@@ -351,10 +347,6 @@ $$
 $$
 = \frac{6\cdot5\cdot4\cdot3!}
 {(3\cdot2\cdot1)\cdot3!}
-$$
-
-$$
-= \frac{6\cdot5\cdot4}{6}
 $$
 
 $$
@@ -391,14 +383,6 @@ $$
 
 $$
 10\cdot6\cdot84\cdot20\cdot1
-$$
-
-$$
-= 60\cdot84\cdot20
-$$
-
-$$
-= 5040\cdot20
 $$
 
 $$
