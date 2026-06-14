@@ -217,7 +217,7 @@ $$
 $$
 
 $$
-= \frac{10\cdot29\cdot14}
+= 10\cdot29\cdot14
 $$
 
 $$
@@ -240,7 +240,7 @@ $$
 $$
 
 $$
-= \frac{25\cdot12}
+= 25\cdot12
 $$
 
 $$
@@ -260,3 +260,151 @@ $$
 ### Respuesta
 
 **1218000**
+
+---
+
+# Ejercicio 6
+
+**Doce amigos van de viaje. Para ello utilizan tres vehículos. Si deciden ir cuatro en cada vehículo y solo cinco de ellos tienen licencia, ¿de cuántas maneras diferentes podrían realizar el viaje?**
+
+### Fórmulas
+
+Permutaciones:
+
+$$
+P(n)=n!
+$$
+
+Combinaciones:
+
+$$
+C_n^k=\frac{n!}{k!(n-k)!}
+$$
+
+### Conductores
+
+Se deben elegir 3 conductores entre los 5 que tienen licencia:
+
+$$
+C_5^3
+= \frac{5!}{3!(5-3)!}
+$$
+
+$$
+= \frac{5!}{3!\,2!}
+$$
+
+$$
+= \frac{5\cdot4\cdot3!}
+{(3\cdot2\cdot1)(2\cdot1)}
+$$
+
+$$
+= \frac{5\cdot4}{2}
+$$
+
+$$
+= 10
+$$
+
+### Distribución de los pasajeros
+
+De los 9 amigos restantes, se eligen 3 para acompañar al primer conductor:
+
+$$
+C_9^3
+= \frac{9!}{3!(9-3)!}
+$$
+
+$$
+= \frac{9!}{3!\,6!}
+$$
+
+$$
+= \frac{9\cdot8\cdot7\cdot6!}
+{(3\cdot2\cdot1)\cdot6!}
+$$
+
+$$
+= \frac{9\cdot8\cdot7}{6}
+$$
+
+$$
+= 3\cdot4\cdot7
+$$
+
+$$
+= 84
+$$
+
+Para el segundo vehículo:
+
+$$
+C_6^3
+= \frac{6!}{3!(6-3)!}
+$$
+
+$$
+= \frac{6!}{3!\,3!}
+$$
+
+$$
+= \frac{6\cdot5\cdot4\cdot3!}
+{(3\cdot2\cdot1)\cdot3!}
+$$
+
+$$
+= \frac{6\cdot5\cdot4}{6}
+$$
+
+$$
+= 2\cdot5\cdot2
+$$
+
+$$
+= 20
+$$
+
+Para el tercer vehículo:
+
+$$
+C_3^3 = 1
+$$
+
+### Orden de los vehículos
+
+Los 3 conductores pueden asignarse a los 3 vehículos de:
+
+$$
+P_3 = 3!
+$$
+
+$$
+= 3\cdot2\cdot1
+$$
+
+$$
+= 6
+$$
+
+### Total
+
+$$
+10\cdot6\cdot84\cdot20\cdot1
+$$
+
+$$
+= 60\cdot84\cdot20
+$$
+
+$$
+= 5040\cdot20
+$$
+
+$$
+= 100800
+$$
+
+### Respuesta
+
+**100800**
