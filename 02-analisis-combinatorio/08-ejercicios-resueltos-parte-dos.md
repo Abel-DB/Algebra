@@ -146,3 +146,54 @@ $$
 ### Respuesta
 
 **30**
+
+---
+
+# Ejercicio 4
+
+**A un concurso literario se han presentado 10 candidatos con sus novelas. El cuadro de honor lo forman el ganador, el finalista y un accésit. ¿Cuántos cuadros de honor se pueden formar?**
+
+### Fórmula
+
+Las variaciones están dadas por:
+
+$$
+V_n^k=\frac{n!}{(n-k)!}
+$$
+
+### Desarrollo
+
+$$
+V_{10}^{3}
+=
+\frac{10!}{(10-3)!}
+$$
+
+$$
+=
+\frac{10!}{7!}
+$$
+
+$$
+=
+\frac{10\cdot9\cdot8\cdot7!}{7!}
+$$
+
+$$
+=
+10\cdot9\cdot8
+$$
+
+$$
+=
+90\cdot8
+$$
+
+$$
+=
+720
+$$
+
+### Respuesta
+
+**720**
