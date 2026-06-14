@@ -164,34 +164,27 @@ $$
 ### Desarrollo
 
 $$
-V_{10}^{3}
-=
-\frac{10!}{(10-3)!}
+V_{10}^{3} = \frac{10!}{(10-3)!}
 $$
 
 $$
-=
-\frac{10!}{7!}
+= \frac{10!}{7!}
 $$
 
 $$
-=
-\frac{10\cdot9\cdot8\cdot7!}{7!}
+= \frac{10\cdot9\cdot8\cdot7!}{7!}
 $$
 
 $$
-=
-10\cdot9\cdot8
+= 10\cdot9\cdot8
 $$
 
 $$
-=
-90\cdot8
+= 90\cdot8
 $$
 
 $$
-=
-720
+= 720
 $$
 
 ### Respuesta
