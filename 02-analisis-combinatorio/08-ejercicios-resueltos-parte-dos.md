@@ -67,19 +67,7 @@ $$
 $$
 
 $$
-= \frac{10 \cdot 9 \cdot 8 \cdot 7}{2}
-$$
-
-$$
 = 5 \cdot 9 \cdot 8 \cdot 7
-$$
-
-$$
-= 45 \cdot 8 \cdot 7
-$$
-
-$$
-= 360 \cdot 7
 $$
 
 $$
@@ -89,3 +77,72 @@ $$
 ### Respuesta
 
 **2520**
+
+---
+
+# Ejercicio 3
+
+**Con el sistema Morse (punto y raya), ¿cuántas señales distintas se pueden enviar usando como máximo cuatro pulsaciones?**
+
+### Datos
+
+- \(m = 2\) símbolos (punto y raya)
+- \(n =\) cantidad de pulsaciones
+
+### Fórmula
+
+$$
+m^n
+$$
+
+### Desarrollo
+
+Para una pulsación:
+
+$$
+2^1 = 2
+$$
+
+Para dos pulsaciones:
+
+$$
+2^2 = 4
+$$
+
+Para tres pulsaciones:
+
+$$
+2^3 = 8
+$$
+
+Para cuatro pulsaciones:
+
+$$
+2^4 = 16
+$$
+
+Como se permiten **hasta cuatro pulsaciones**, sumamos todas las posibilidades:
+
+$$
+2^1 + 2^2 + 2^3 + 2^4
+$$
+
+$$
+= 2 + 4 + 8 + 16
+$$
+
+$$
+= 6 + 8 + 16
+$$
+
+$$
+= 14 + 16
+$$
+
+$$
+= 30
+$$
+
+### Respuesta
+
+**30**
