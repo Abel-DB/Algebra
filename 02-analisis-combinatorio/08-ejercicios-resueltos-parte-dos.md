@@ -57,8 +57,8 @@ PR = \frac{10!}{5! \cdot 2! \cdot 3!}
 $$
 
 $$
-= \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!}
-{5! \cdot (2 \cdot 1) \cdot (3 \cdot 2 \cdot 1)}
+= \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot \cancel{5!}}
+{\cancel{5!} \cdot (2 \cdot 1) \cdot (3 \cdot 2 \cdot 1)}
 $$
 
 $$
@@ -180,13 +180,111 @@ $$
 $$
 
 $$
-= 90\cdot8
-$$
-
-$$
 = 720
 $$
 
 ### Respuesta
 
 **720**
+
+---
+
+# Ejercicio 5
+
+**La asociación 25 de Mayo está formada por 55 personas, de las cuales 30 son mujeres y 25 varones. ¿De cuántas formas se puede escoger un comité de 5 personas que incluya 3 mujeres y 2 varones?**
+
+### Fórmula
+
+Las combinaciones están dadas por:
+
+$$
+C_n^k=\frac{n!}{k!(n-k)!}
+$$
+
+### Mujeres
+
+$$
+C_{30}^{3}
+=
+\frac{30!}{3!(30-3)!}
+$$
+
+$$
+=
+\frac{30!}{3!\,27!}
+$$
+
+$$
+=
+\frac{30\cdot29\cdot28\cdot27!}
+{(3\cdot2\cdot1)\cdot27!}
+$$
+
+$$
+=
+\frac{30\cdot29\cdot28}{6}
+$$
+
+$$
+=
+5\cdot29\cdot28
+$$
+
+$$
+=
+145\cdot28
+$$
+
+$$
+=
+4060
+$$
+
+### Varones
+
+$$
+C_{25}^{2}
+=
+\frac{25!}{2!(25-2)!}
+$$
+
+$$
+=
+\frac{25!}{2!\,23!}
+$$
+
+$$
+=
+\frac{25\cdot24\cdot23!}
+{(2\cdot1)\cdot23!}
+$$
+
+$$
+=
+\frac{25\cdot24}{2}
+$$
+
+$$
+=
+25\cdot12
+$$
+
+$$
+=
+300
+$$
+
+### Total
+
+$$
+4060\cdot300
+$$
+
+$$
+=
+1218000
+$$
+
+### Respuesta
+
+**1218000**
