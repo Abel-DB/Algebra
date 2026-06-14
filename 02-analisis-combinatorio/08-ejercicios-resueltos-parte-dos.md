@@ -163,7 +163,7 @@ $$
 ### Varones
 
 $$
-C_{25}^{2} = \frac{25!}{2!(25-2)!} = \frac{25!}{2!\,23!} = \frac{25\cdot24\cdot23!}
+C_{25}^{2} = \frac{25!}{2!(25-2)!} = \frac{25!}{2!\23!} = \frac{25\cdot24\cdot23!}
 {(2\cdot1)\cdot23!} = 25\cdot12 = 300
 $$
 
@@ -248,3 +248,122 @@ $$
 ### Respuesta
 
 **100800**
+
+---
+
+# Ejercicio 7
+
+**A un congreso asisten 50 personas, de las cuales 20 hablan inglés, 16 alemán y 14 español. ¿Cuántos diálogos diferentes pueden establecerse sin intérprete?**
+
+### Fórmula
+
+Las combinaciones están dadas por:
+
+$$
+C_n^k=\frac{n!}{k!(n-k)!}
+$$
+
+Como un diálogo se establece entre dos personas:
+
+$$
+C_n^2=\frac{n!}{2!(n-2)!}
+$$
+
+### Inglés
+
+$$
+C_{20}^{2} = \frac{20!}{2!(20-2)!}
+$$
+
+$$
+= \frac{20!}{2!\,18!}
+$$
+
+$$
+= \frac{20\cdot19\cdot18!}
+{(2\cdot1)\cdot18!}
+$$
+
+$$
+= \frac{20\cdot19}{2}
+$$
+
+$$
+= 10\cdot19
+$$
+
+$$
+= 190
+$$
+
+### Alemán
+
+$$
+C_{16}^{2} = \frac{16!}{2!(16-2)!}
+$$
+
+$$
+= \frac{16!}{2!\,14!}
+$$
+
+$$
+= \frac{16\cdot15\cdot14!}
+{(2\cdot1)\cdot14!}
+$$
+
+$$
+= \frac{16\cdot15}{2}
+$$
+
+$$
+= 8\cdot15
+$$
+
+$$
+= 120
+$$
+
+### Español
+
+$$
+C_{14}^{2} = \frac{14!}{2!(14-2)!}
+$$
+
+$$
+= \frac{14!}{2!\,12!}
+$$
+
+$$
+= \frac{14\cdot13\cdot12!}
+{(2\cdot1)\cdot12!}
+$$
+
+$$
+= \frac{14\cdot13}{2}
+$$
+
+$$
+= 7\cdot13
+$$
+
+$$
+= 91
+$$
+
+### Total
+
+$$
+190+120+91
+$$
+
+$$
+= 310+91
+$$
+
+$$
+= 401
+$$
+
+### Respuesta
+
+**401**
