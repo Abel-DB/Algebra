@@ -51,11 +51,7 @@ $$
 $$
 PR = \frac{10!}{5! \cdot 2! \cdot 3!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot \cancel{5!}}
 {\cancel{5!} \cdot (2 \cdot 1) \cdot (3 \cdot 2 \cdot 1)} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}
-{2 \cdot 6} = 5 \cdot 9 \cdot 8 \cdot 7
-$$
-
-$$
-= 2520
+{2 \cdot 6} = 5 \cdot 9 \cdot 8 \cdot 7 = 2520
 $$
 
 ### Respuesta
@@ -112,19 +108,7 @@ $$
 $$
 
 $$
-= 2 + 4 + 8 + 16
-$$
-
-$$
-= 6 + 8 + 16
-$$
-
-$$
-= 14 + 16
-$$
-
-$$
-= 30
+= 2 + 4 + 8 + 16 = 30
 $$
 
 ### Respuesta
@@ -148,23 +132,7 @@ $$
 ### Desarrollo
 
 $$
-V_{10}^{3} = \frac{10!}{(10-3)!}
-$$
-
-$$
-= \frac{10!}{7!}
-$$
-
-$$
-= \frac{10\cdot9\cdot8\cdot7!}{7!}
-$$
-
-$$
-= 10\cdot9\cdot8
-$$
-
-$$
-= 720
+V_{10}^{3} = \frac{10!}{(10-3)!} = \frac{10!}{7!} = \frac{10\cdot9\cdot8\cdot7!}{7!} = 10\cdot9\cdot8 = 720
 $$
 
 ### Respuesta
@@ -188,57 +156,21 @@ $$
 ### Mujeres
 
 $$
-C_{30}^{3} = \frac{30!}{3!(30-3)!}
-$$
-
-$$
-= \frac{30!}{3!\,27!}
-$$
-
-$$
-= \frac{30\cdot29\cdot28\cdot27!}
-{(3\cdot2\cdot1)\cdot27!}
-$$
-
-$$
-= 10\cdot29\cdot14
-$$
-
-$$
-= 4060
+C_{30}^{3} = \frac{30!}{3!(30-3)!} = \frac{30!}{3!\,27!} = \frac{30\cdot29\cdot28\cdot27!}
+{(3\cdot2\cdot1)\cdot27!} = 10\cdot29\cdot14 = 4060
 $$
 
 ### Varones
 
 $$
-C_{25}^{2} = \frac{25!}{2!(25-2)!}
-$$
-
-$$
-= \frac{25!}{2!\,23!}
-$$
-
-$$
-= \frac{25\cdot24\cdot23!}
-{(2\cdot1)\cdot23!}
-$$
-
-$$
-= 25\cdot12
-$$
-
-$$
-= 300
+C_{25}^{2} = \frac{25!}{2!(25-2)!} = \frac{25!}{2!\,23!} = \frac{25\cdot24\cdot23!}
+{(2\cdot1)\cdot23!} = 25\cdot12 = 300
 $$
 
 ### Total
 
 $$
-4060\cdot300
-$$
-
-$$
-= 1218000
+4060\cdot300 = 1218000
 $$
 
 ### Respuesta
@@ -271,24 +203,8 @@ Se deben elegir 3 conductores entre los 5 que tienen licencia:
 
 $$
 C_5^3
-= \frac{5!}{3!(5-3)!}
-$$
-
-$$
-= \frac{5!}{3!\,2!}
-$$
-
-$$
-= \frac{5\cdot4\cdot3!}
-{(3!)(2\cdot1)}
-$$
-
-$$
-= 5\cdot2
-$$
-
-$$
-= 10
+= \frac{5!}{3!(5-3)!} = \frac{5!}{3!\,2!} = \frac{5\cdot4\cdot3!}
+{(3!)(2\cdot1)} = 5\cdot2 = 10
 $$
 
 ### Distribución de los pasajeros
@@ -297,48 +213,16 @@ De los 9 amigos restantes, se eligen 3 para acompañar al primer conductor:
 
 $$
 C_9^3
-= \frac{9!}{3!(9-3)!}
-$$
-
-$$
-= \frac{9!}{3!\,6!}
-$$
-
-$$
-= \frac{9\cdot8\cdot7\cdot6!}
-{(3\cdot2\cdot1)\cdot6!}
-$$
-
-$$
-= 3\cdot4\cdot7
-$$
-
-$$
-= 84
+= \frac{9!}{3!(9-3)!} = \frac{9!}{3!\,6!} = \frac{9\cdot8\cdot7\cdot6!}
+{(3\cdot2\cdot1)\cdot6!} = 3\cdot4\cdot7 = 84
 $$
 
 Para el segundo vehículo:
 
 $$
 C_6^3
-= \frac{6!}{3!(6-3)!}
-$$
-
-$$
-= \frac{6!}{3!\,3!}
-$$
-
-$$
-= \frac{6\cdot5\cdot4\cdot3!}
-{(3\cdot2\cdot1)\cdot3!}
-$$
-
-$$
-= 2\cdot5\cdot2
-$$
-
-$$
-= 20
+= \frac{6!}{3!(6-3)!} = \frac{6!}{3!\,3!} = \frac{6\cdot5\cdot4\cdot3!}
+{(3\cdot2\cdot1)\cdot3!} = 2\cdot5\cdot2 = 20
 $$
 
 Para el tercer vehículo:
@@ -352,15 +236,7 @@ $$
 Los 3 conductores pueden asignarse a los 3 vehículos de:
 
 $$
-P_3 = 3!
-$$
-
-$$
-= 3\cdot2\cdot1
-$$
-
-$$
-= 6
+P_3 = 3! = 3\cdot2\cdot1 = 6
 $$
 
 ### Total
