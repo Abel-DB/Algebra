@@ -25,11 +25,7 @@ $$
 $$
 
 $$
-= 5040 \cdot 2
-$$
-
-$$
-= 10080
+= 5040 \cdot 2 = 10080
 $$
 
 ### Respuesta
@@ -53,21 +49,9 @@ $$
 ### Desarrollo
 
 $$
-PR = \frac{10!}{5! \cdot 2! \cdot 3!}
-$$
-
-$$
-= \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot \cancel{5!}}
-{\cancel{5!} \cdot (2 \cdot 1) \cdot (3 \cdot 2 \cdot 1)}
-$$
-
-$$
-= \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}
-{2 \cdot 6}
-$$
-
-$$
-= 5 \cdot 9 \cdot 8 \cdot 7
+PR = \frac{10!}{5! \cdot 2! \cdot 3!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot \cancel{5!}}
+{\cancel{5!} \cdot (2 \cdot 1) \cdot (3 \cdot 2 \cdot 1)} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}
+{2 \cdot 6} = 5 \cdot 9 \cdot 8 \cdot 7
 $$
 
 $$
@@ -300,7 +284,7 @@ $$
 $$
 
 $$
-= 5\cdot4
+= 5\cdot2
 $$
 
 $$
@@ -382,11 +366,7 @@ $$
 ### Total
 
 $$
-10\cdot6\cdot84\cdot20\cdot1
-$$
-
-$$
-= 100800
+10\cdot6\cdot84\cdot20\cdot1 = 100800
 $$
 
 ### Respuesta
