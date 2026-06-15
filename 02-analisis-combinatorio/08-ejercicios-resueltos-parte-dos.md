@@ -356,9 +356,7 @@ $$
 $$
 2!\cdot\frac{7!}{3!\cdot2!\cdot1!} = 2!\cdot
 \frac{7\cdot6\cdot5\cdot4\cdot3!}
-{3!\cdot(2\cdot1)\cdot1} = 2\cdot
-\frac{7\cdot6\cdot5\cdot4}
-{2} = 2\cdot(7\cdot3\cdot5\cdot4) = 2\cdot420 = 840
+{3!\cdot(2\cdot1)\cdot1} = 7\cdot6\cdot5\cdot4 = 7\cdot6\cdot5\cdot4 = 840
 $$
 
 ### Respuesta
@@ -386,29 +384,8 @@ $$
 ### Elegir 3 mascotas entre las 9 disponibles
 
 $$
-C_9^3
-= \frac{9!}{3!(9-3)!}
-$$
-
-$$
-= \frac{9!}{3!\,6!}
-$$
-
-$$
-= \frac{9\cdot8\cdot7\cdot6!}
-{(3\cdot2\cdot1)\cdot6!}
-$$
-
-$$
-= \frac{9\cdot8\cdot7}{6}
-$$
-
-$$
-= 3\cdot4\cdot7
-$$
-
-$$
-= 84
+C_9^3 = \frac{9!}{3!(9-3)!} = \frac{9!}{3!\cdot6!} = \frac{9\cdot8\cdot7\cdot6!}
+{(3\cdot2\cdot1)\cdot6!} = 3\cdot4\cdot7 = 84
 $$
 
 ### Elegir 3 mascotas sin gatos
@@ -416,43 +393,14 @@ $$
 Si no se escoge ningún gato, solamente pueden elegirse entre los 3 perros y los 3 canarios.
 
 $$
-C_6^3
-= \frac{6!}{3!(6-3)!}
-$$
-
-$$
-= \frac{6!}{3!\,3!}
-$$
-
-$$
-= \frac{6\cdot5\cdot4\cdot3!}
-{(3\cdot2\cdot1)\cdot3!}
-$$
-
-$$
-= \frac{6\cdot5\cdot4}{6}
-$$
-
-$$
-= 2\cdot5\cdot2
-$$
-
-$$
-= 20
+C_6^3 = \frac{6!}{3!(6-3)!} = \frac{6!}{3!\cdot3!} = \frac{6\cdot5\cdot4\cdot3!}
+{(3\cdot2\cdot1)\cdot3!} = 2\cdot5\cdot2 = 20
 $$
 
 ### Total
 
 $$
-C_9^3 - C_6^3
-$$
-
-$$
-= 84 - 20
-$$
-
-$$
-= 64
+C_9^3 - C_6^3 = 84 - 20 = 64
 $$
 
 ### Respuesta
