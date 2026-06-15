@@ -356,7 +356,7 @@ $$
 $$
 2!\cdot\frac{7!}{3!\cdot2!\cdot1!} = 2!\cdot
 \frac{7\cdot6\cdot5\cdot4\cdot3!}
-{3!\cdot(2\cdot1)\cdot1} = 7\cdot6\cdot5\cdot4 = 7\cdot6\cdot5\cdot4 = 840
+{3!\cdot2!\cdot1} = 7\cdot6\cdot5\cdot4 = 840
 $$
 
 ### Respuesta
