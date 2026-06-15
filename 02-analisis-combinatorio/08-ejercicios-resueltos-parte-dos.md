@@ -299,3 +299,98 @@ $$
 ### Respuesta
 
 **401**
+
+---
+
+# Ejercicio 8
+
+**¿Cuántos anagramas se pueden formar con las letras de la palabra "COCACOLA", si las letras LA deben estar juntas en cualquier orden?**
+
+### Datos
+
+En la palabra **COCACOLA** tenemos:
+
+- C = 3
+- O = 2
+- A = 2
+- L = 1
+
+Las letras **L** y **A** deben permanecer juntas, por lo que forman un bloque.
+
+El bloque puede escribirse de dos formas:
+
+$$
+(LA)
+$$
+
+o
+
+$$
+(AL)
+$$
+
+Las permutaciones del bloque son:
+
+$$
+P_2=2!
+$$
+
+$$
+=2
+$$
+
+### Formación del bloque
+
+Al considerar el bloque como un solo elemento, quedan:
+
+- Bloque
+- C = 3
+- O = 2
+- A = 1
+
+En total:
+
+$$
+7 \text{ elementos}
+$$
+
+Aplicamos permutaciones con repetición:
+
+$$
+PR_7^{3,2,1}
+= \frac{7!}{3!\cdot2!\cdot1!}
+$$
+
+### Desarrollo
+
+$$
+2!\cdot\frac{7!}{3!\cdot2!\cdot1!}
+$$
+
+$$
+= 2!\cdot
+\frac{7\cdot6\cdot5\cdot4\cdot3!}
+{3!\cdot(2\cdot1)\cdot1}
+$$
+
+$$
+= 2\cdot
+\frac{7\cdot6\cdot5\cdot4}
+{2}
+$$
+
+$$
+= 2\cdot(7\cdot3\cdot5\cdot4)
+$$
+
+$$
+= 2\cdot420
+$$
+
+$$
+= 840
+$$
+
+### Respuesta
+
+**840**
